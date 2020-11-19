@@ -1,0 +1,23 @@
+* C:\Users\Termin\Documents\PSPice\ProblemDimop.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Tue Sep 01 21:25:30 2015
+
+
+
+** Analysis setup **
+.ac LIN 1001 10 100K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "ProblemDimop.net"
+.INC "ProblemDimop.als"
+
+
+.probe
+
+
+.END
