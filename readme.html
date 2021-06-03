@@ -1,0 +1,58 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title></title></head><body><h1 align="center">
+    <a href="https://github.com/KeyC0de/Butterworth_SallenKey_Chebyshev_Filter_Analysis.git">Butterworth, Sallen-Key & Chebyshev Filter Design</a>
+</h1>
+
+<hr>
+
+<p>I separate the implementation in several parts as outlined below.</p>
+
+<p><strong>Part A.</strong></br>
+<em>A1</em>. Design a normalized low-pass filter with Butterworth response, cutoff rate equal to 18dB/octave and maximum allowed gain deviation in the pass region equal to a<em>max = 1.5 dB.</br>
+<em>A2</em>. Implement the normalized filter by connecting in cascade multiple sections. All capacitors must be identical. For the implementation of the second section, use a Sallen-Key filter with identical resistors and identical capacitors (Design II).</br>
+<em>A3</em>. Depict the logarithmic gain curve as calculated from the transfer function of the design <strong>along with</strong> the transfer function of the circuit.</br>
+<em>A4</em>. Denormalize the circuit such that the cutoff frequency become f</em>c = 1.6 kHz and the resisters be at their normal values with dimensions. Sketch the logarithmic gain curve of the denormalized circuit given frequency f (logarithmic axis). Verify cutoff frequency and cutoff rate.</br>
+<em>A5</em>. Simulate the PSPice denormalized circuit and verify it has the expected response curve.</br></p>
+
+<p><strong>Part B.</strong></br>
+<em>B1</em>. Convert the Butterworth filter to same-order Chebyshev filter, cutoff frequency f<em>c and ripple a</em>max = 1.5 dB, by changing the values of just 3 resistors.</br>
+<em>B2</em>. Verify your calculations by sketching the response curve of the Chebyshev filter from the circuit.</br>
+<em>B3</em>. Simulate the Chebyshev filter in PSPice and verify your design.</p>
+
+<p>Clarifying some terminology I will be using:</p>
+
+<ul>
+<li>Synthesis : design according to the specifications. In other words, choosing the electronic and electrical components with the correct values and wiring them all together as needed.</li>
+<li>Analysis : The electrical circuit is given to us. We break it down into its components and consequently calculate its transfer function, the input and output characteristics and waveforms.</li>
+</ul>
+
+<p>We will be using <em>passive</em> electrical filters, i.e. no amplifiers, no Operational Amplifiers O.A..</p>
+
+<p>The entire program is in &ldquo;Butterworth<em>SallenKey</em>Chebyshev_Filters.xmcd&rdquo;. You need MathCad 14 + to launch it. It is a paid program. Alternatively you may use SMath Studio which may (just maybe) open it (untested, theoretically it should be possible).</br></p>
+
+<p>For reference, I cite below the Chebyshev transfer functions according to my analysis &amp; synthesis (1st) as well as the simulation results in PsPice (2nd).</p>
+
+<p style="text-align: center;">
+    <img src="_present/chebyshev_filter_transfer_function.jpg" />
+</p>
+
+<p style="text-align: center;">
+    <img src="_present/chebyshev_filter.jpg" />
+</p>
+
+<p>Platform used:</br>
+Windows 8.1 x86_64</br>
+Mathcad 14.0.2.5</br>
+PSPice 9.0</p>
+
+<h1><span style="font-family: 'Zrnic';">Github</span></h1>
+
+<p>Github repository <a href="https://github.com/KeyC0de/Butterworth_SallenKey_Chebyshev_Filter_Analysis">link</a>. There are PSPice files and the .xmcd file is the Mathcad document replete with the implementation and sufficient documentation.</p>
+
+<h1><span style="font-family: 'Zrnic';">Acknowledgements</span></h1>
+
+<ul>
+<li>My professor Mr. Dimopoulos Hercules for being a great teacher!</li>
+<li>Analog Electronic Filters - Theory, Design and Synthesis, Dimopoulos, Hercules G.</li>
+</ul>
+
+</body></html>
